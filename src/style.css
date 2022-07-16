@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./TrajanusBricks.ttf') format('truetype'),
+    url('./TrajanusBricksXtra.ttf') format('truetype'),
+    url('./TrajanusBriX-Invers.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.hello {
+  color: red;
+  font-family: 'MyFont';
+  /* background: url('./icon.png'); */
+
+}
