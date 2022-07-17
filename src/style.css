@@ -10,12 +10,49 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url('./fire.jpg') no-repeat;
+  background-size: cover;
 }
 
 .hello {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background: rgba(255, 255, 255);
   color: red;
+  border-top: solid 2px red;
+  border-bottom: solid 2px red;
   font-family: 'MyFont';
-  /* background: url('./icon.png'); */
+  
+}
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  background: rgb(255, 255, 255, .6);
+  font-family:'Times New Roman', Times, serif;
+  min-height: 100vh;
+  border: solid 1px red;
+}
+
+@media (max-width: 720px) {
+  .menu {
+    width: 90vw;
+  }
+}
+
+h1 {
+  font-family: 'MyFont';
+}
+
+h2 {
+  font-family: 'MyFont';
+}
+
+h3 {
+  font-family: 'MyFont';
 }
