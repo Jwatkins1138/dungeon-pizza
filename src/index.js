@@ -68,14 +68,15 @@ function home() {
 
   const box1 = document.createElement('div');
   box1.classList.add('menu-box');
-  box1.innerHTML = '<p>The pizza of your dreams is the pizza of your nightmares.</p>';
+  box1.innerHTML = '<p class="info">The pizza of your dreams is the pizza of your nightmares.</p>';
 
   const box2 = document.createElement('div');
   box2.classList.add('menu-box');
-  box2.innerHTML = '<p>In a deep and forgotten pit the elder god Zzi`za kneads his dough... </p>';
+  box2.innerHTML = '<p class="info">In a deep and forgotten pit the elder god Zzi`za kneads his dough... </p>';
 
   const minos = new Image();
   minos.src = Icon;
+  minos.classList.add('graphic');
 
   menu.appendChild(spacer);
   menu.appendChild(menuHead);

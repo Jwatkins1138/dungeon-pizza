@@ -86,6 +86,16 @@ input[type=button].active {
 
 }
 
+p.info {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.graphic {
+  max-width: 60vw;
+  margin: 1em;
+}
+
 @media only screen and (max-width: 720px) {
   .menu {
     width: 90vw;
