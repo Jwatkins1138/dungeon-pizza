@@ -85,6 +85,9 @@ input[type=button].active {
 .sub-box {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  min-width: 20vw;
 
 }
 
