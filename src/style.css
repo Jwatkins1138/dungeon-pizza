@@ -16,8 +16,10 @@ body {
   background-size: cover;
 }
 
-.hello {
+.header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100vw;
   background: rgba(255, 255, 255);
@@ -26,6 +28,37 @@ body {
   border-bottom: solid 2px red;
   font-family: 'MyFont';
   
+}
+
+#title {
+  transform: translateY(20%);
+}
+
+.nav {
+  transform: translateY(50%);
+}
+
+input[type=button] {
+  font-family: 'Times New Roman', Times, serif;
+  border-top: none;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+  background: white;
+  padding: 1em;
+  width: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+input[type=button]:hover {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+
+input[type=button].active {
+  background: black;
+  color: red;
 }
 
 .menu {
@@ -39,7 +72,21 @@ body {
   border: solid 1px red;
 }
 
-@media (max-width: 720px) {
+.spacer {
+  margin: 2em;
+}
+
+.menu-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.sub-box {
+
+}
+
+@media only screen and (max-width: 720px) {
   .menu {
     width: 90vw;
   }
