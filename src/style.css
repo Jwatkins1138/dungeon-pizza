@@ -83,7 +83,14 @@ input[type=button].active {
 }
 
 .sub-box {
+  display: flex;
+  flex-direction: column;
 
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 p.info {

@@ -116,15 +116,68 @@ function menu() {
   menu.appendChild(box1);
   menu.appendChild(box2);
 
+  function populate(subMenu, itemsArr) {
+    var items = document.createElement('div');
+    var prices = document.createElement('div');
+    itemsArr.forEach(item => {
+      var name = document.createElement('div');
+      var price = document.createElement('div');
+      items.appendChild(name);
+      prices.appendChild(price);
+      name.innerHTML = item[0];
+      price.innerHTML = item[1];
+    })
+    subMenu.appendChild(items);
+    subMenu.appendChild(prices);
+  }
+
   const pizza = document.createElement('div');
   pizza.classList.add('sub-box');
-  pizza.innerHTML = '<h3>Pizza</h3><p>pepperoni</p><p>supreme</p>';
+  const pizzaList = document.createElement('div');
+  pizzaList.classList.add('menu-list');
+  
+  pizza.innerHTML = '<h3>Pizza</h3>';
+  
+  const pizzas = [['pepperoni', '12'],['supreme','13']];
+  populate(pizzaList, pizzas);
+  pizza.appendChild(pizzaList);
   box1.appendChild(pizza);
 
   const salad = document.createElement('div');
   salad.classList.add('sub-box');
-  salad.innerHTML = '<h3>salad</h3><p>green</p><p>super green</p>';
+  const saladList = document.createElement('div');
+  saladList.classList.add('menu-list');
+  
+  salad.innerHTML = '<h3>salad</h3>';
+  
+  const salads = [['green','11'],['super green','12']];
+  populate(saladList, salads);
+  salad.appendChild(saladList);
   box1.appendChild(salad);
+
+  const dessert = document.createElement('div');
+  dessert.classList.add('sub-box');
+  const dessertList = document.createElement('div');
+  dessertList.classList.add('menu-list');
+
+  dessert.innerHTML = '<h3>dessert</h3>';
+  
+  const desserts = [['da peach a la mode','6'],['goblin cobbler','5']];
+  populate(dessertList, desserts);
+  dessert.appendChild(dessertList);
+  box2.appendChild(dessert);
+
+  const drink = document.createElement('div');
+  drink.classList.add('sub-box');
+  const drinkList = document.createElement('div');
+  drinkList.classList.add('menu-list');
+
+  drink.innerHTML = '<h3>drink</h3>';
+  
+  const drinks = [['grogg','4'],['mead','5']];
+  populate(drinkList, drinks);
+  drink.appendChild(drinkList);
+  box2.appendChild(drink);
 
   document.body.appendChild(menu);
 }
